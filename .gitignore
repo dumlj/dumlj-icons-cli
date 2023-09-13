@@ -1,0 +1,13 @@
+node_modules
+packages/@dumlj-icons/src
+packages/*/dist
+packages/*/*/dist
+packages/*/libs
+coverage
+
+.parcel-cache
+yarn-error.log
+.DS_Store
+
+# git hooks
+/.husky

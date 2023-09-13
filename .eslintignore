@@ -1,0 +1,7 @@
+node_modules
+packages/*/libs
+packages/*/dist
+packages/*/*/dist
+packages/dumlj-icons/src
+packages/icons-cli/bin
+packages/figma-publish-notice/*

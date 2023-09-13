@@ -1,0 +1,8 @@
+{
+  "name": "figma-publish-notice",
+  "id": "1137279101680439816",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "editorType": ["figma"]
+}

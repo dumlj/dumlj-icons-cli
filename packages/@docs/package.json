@@ -1,0 +1,22 @@
+{
+  "name": "@dumlj/docs",
+  "version": "0.0.2",
+  "private": true,
+  "description": "Icon automation workflow with Figma",
+  "license": "MIT",
+  "author": "dmy",
+  "source": "public/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build:docs": "parcel build --public-url ./"
+  },
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "antd": "^4.22.2",
+    "normalize.css": "^8.0.1",
+    "parcel": "^2.6.2"
+  }
+}

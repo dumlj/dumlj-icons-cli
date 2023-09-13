@@ -1,0 +1,52 @@
+{
+  "name": "dumlj-icons",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build:docs": "lerna run build:docs",
+    "build:icon": "lerna run build:icon",
+    "build:icon-cli": "lerna run build:icon-cli",
+    "generate:icon": "lerna run generate:icon",
+    "lint-stage:format": "prettier --config .prettierrc.js --write --",
+    "lint-stage:lint:ts": "eslint --config .eslintrc.js --ext .ts,.tsx --fix . --max-warnings 0",
+    "staged": "yarn lint-staged",
+    "husky": "husky set .husky/pre-commit \"yarn lint-staged\"",
+    "init": "husky install && yarn husky",
+    "postinstall": "yarn run init",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@types/jest": "^29.5.4",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "jest": "^29.6.4",
+    "lerna": "^5.2.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-test-renderer": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^29.1.1"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,d.ts,vue,md,json,yml,yaml,less,css}": [
+      "yarn lint-stage:format"
+    ],
+    "**/*.{ts,tsx,d.ts}": [
+      "yarn lint-stage:lint:ts"
+    ]
+  }
+}

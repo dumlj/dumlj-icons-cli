@@ -1,0 +1,25 @@
+{
+  "name": "@dumlj/icon",
+  "version": "0.0.1",
+  "description": "icons lib",
+  "main": "dist/index.js",
+  "typings": "src/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": [
+    "src/style/*.css"
+  ],
+  "license": "MIT",
+  "author": "dmy",
+  "scripts": {
+    "generate:icon": "dumlj-icons -c ./icons.config.js",
+    "build:icon": "babel ./src --out-dir dist --extensions .js"
+  },
+  "peerDependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {}
+}

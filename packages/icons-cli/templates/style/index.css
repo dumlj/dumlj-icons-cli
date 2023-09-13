@@ -1,0 +1,14 @@
+.dumlj-icon-spin,
+.dumlj-icon-spin:before {
+  animation: iconLoadingCircle 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes iconLoadingCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
